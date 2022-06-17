@@ -1,0 +1,114 @@
+Tasks for Thursday Lab(16th June 2022)
+Write a Java Program to check given number is even or odd
+
+import java.util.Scanner;
+public class EvenOdd {
+	public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+        	int num = reader.nextInt();
+
+        	if(num % 2 == 0)
+            	System.out.println(num + " is even");
+        	else
+            	System.out.println(num + " is odd");
+
+    }
+}
+
+2. Write a Java Program to print greatest of three numbers 
+using if else
+import java.util.Scanner;
+public class Biggest_Number 
+{
+    public static void main(String[] args) 
+    {
+        int x, y, z;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the first number:");
+        x = s.nextInt();
+        System.out.print("Enter the second number:");
+        y = s.nextInt();
+        System.out.print("Enter the third number:");
+        z = s.nextInt();
+        if(x > y && x > z)
+        {
+            System.out.println("Largest number is:"+x);
+        }
+        else if(y > z)
+        {
+            System.out.println("Largest number is:"+y);
+      }
+        else
+        {
+            System.out.println("Largest number is:"+z);
+        }
+ 
+    }
+}
+
+3. Write a Java Program to print the life period of the 
+user based on user's age
+childhood 1-10 years
+Adolescence 10-16 years
+Teenager 16-19 years 
+Young Adult 19-24
+Adult 24-35
+Middle Age 35-45
+Late Adult 45-60
+senior citizen 60 above	
+import java.util.Scanner;
+
+public class LifePeriod {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int age = sc.nextInt();
+		if(age <= 10 && age >= 1 ) {
+			
+			System.out.println("childhood");
+		}
+		else if(age>=11 && age<=16){
+			System.out.println("Adolescence");
+		}
+		else if(age>= 17 && age <= 19){
+			System.out.println("Teenager");
+		}
+		else if(age>=20 && age<=24){
+			System.out.println("Young Adult");
+		}
+		else if(age>= 25 && age <= 35){
+			System.out.println("Adult");
+		}
+		else if(age>=36 && age<=45){
+			System.out.println("Middle Age ");
+		}
+		else if(age>= 46 && age <= 50){
+			System.out.println("Late Adult");
+		}
+		else {
+			System.out.println("senior citizen");
+		}
+
+	}
+
+}
+
+4. Write a program to encrypt a grade by adding 8 to it. Also
+decrpyt it to show the corrent grade.	
+public class encryptdecrypt {
+
+	public static void main(String[] args) {
+		
+		char a='b';
+		a=(char) (a+8);
+		//type casting
+		
+		System.out.println(a);
+		
+		a=(char) (a-8);
+		System.out.println(a);
+	}
+
+}
+

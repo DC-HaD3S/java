@@ -4,7 +4,7 @@ public class AreaOfRectangle {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter length = ");
 		int length = sc.nextInt();
-		System.out.println("enter length = ");
+		System.out.println("enter breadth = ");
 		int bredth = sc.nextInt();
 		Area a = new Area();
 		a.calculateArea(length, bredth);

@@ -5,9 +5,9 @@ public class AreaOfRectangle {
 		System.out.println("enter length = ");
 		int length = sc.nextInt();
 		System.out.println("enter breadth = ");
-		int bredth = sc.nextInt();
+		int breadth = sc.nextInt();
 		Area a = new Area();
-		a.calculateArea(length, bredth);
+		a.calculateArea(length, breadth);
 		
 		
 
@@ -19,8 +19,8 @@ public class AreaOfRectangle {
 
 public class Area {
 
-	public void calculateArea(int length , int  bredth) {
-		int area = length * bredth ;
+	public void calculateArea(int length , int  breadth) {
+		int area = length * breadth ;
 		System.out.println("Area of Rectangle is = " + area);
 	}
 
